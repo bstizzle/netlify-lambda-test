@@ -14,8 +14,8 @@ const LambdaDemo = () => {
   const [msg, setMsg] = useState(null)
   const { loading, error, data } = useQuery(HELLO);
 
-  // if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error :(</p>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
 
   const handleClick = api => e => {
     e.preventDefault()
