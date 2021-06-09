@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { ApolloProvider, ApolloClient } from "@apollo/client";
+import { 
+  ApolloProvider,
+  ApolloClient,
+  InMemoryCache } from "@apollo/client";
 const client = new ApolloClient({
-  uri: "/.netlify/functions/graphql"
+  uri: "/.netlify/functions/graphql",
+  cache: new InMemoryCache()
 });
 
 ReactDOM.render(
