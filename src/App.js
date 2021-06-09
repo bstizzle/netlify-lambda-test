@@ -39,7 +39,7 @@ const LambdaDemo = () => {
     <p>
       <button onClick={handleClick("hello")}>{loadingF ? "Loading..." : "Call Lambda"}</button>
       <button onClick={handleClick("async-dadjoke")}>{loadingF ? "Loading..." : "Call Async Lambda"}</button>
-      <button onClick={handleGraphql}>{loading ? "Loading..." : data}</button>
+      <button onClick={handleGraphql}>{loading ? "Loading..." : [data]}</button>
       <br />
       <span>{msg}</span>
     </p>
