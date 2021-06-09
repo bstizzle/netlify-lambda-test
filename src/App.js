@@ -4,7 +4,9 @@ import "./App.css"
 import { gql, useQuery } from "@apollo/client";
 
 const HELLO = gql`
-  query hello
+  {
+    hello
+  }
 `
 
 const LambdaDemo = () => {
